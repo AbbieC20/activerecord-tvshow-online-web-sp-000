@@ -5,7 +5,8 @@ class Show < ActiveRecord::Base
   end
 
   def self.most_popular_show
-    
+    return highest_rating.title
   end
+  # return the name of the show with the highest rating
 
 end
